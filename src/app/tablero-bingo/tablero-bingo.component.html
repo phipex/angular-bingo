@@ -1,0 +1,217 @@
+<div class="d-flex flex-column flex-sm-column flex-md-row border rounded margin justify-content-around" id="tablero">
+	<div id="header-number" class="d-flex flex-row flex-sm-row flex-md-column flex-fill header-number ">
+		<div class="flex-fill columna-b" id="columna-b">B</div>
+		<div class="flex-fill columna-i" id="columna-i">I</div>
+		<div class="flex-fill columna-n" id="columna-n">N</div>
+		<div class="flex-fill columna-g" id="columna-g">G</div>
+		<div class="flex-fill columna-o" id="columna-o">O</div>
+
+	</div>
+	<div id="numbers-1" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[1 - 1 ] }" id="numero1">1 </div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[15] }" id="numero16">16</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[30] }" id="numero31">31</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[45] }" id="numero46">46</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[60] }" id="numero61">61</div>
+
+	</div>
+	<div id="numbers-2" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[1] }" id="numero2">2</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[16] }" id="numero16">17</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[31] }" id="numero32">32</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[46] }" id="numero47">47</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[61] }" id="numero62">62</div>
+
+	</div>
+	<div id="numbers-3" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[2] }" id="numero3">3</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[17] }" id="numero18">18</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[32] }" id="numero33">33</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[47] }" id="numero48">48</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[62] }" id="numero63">63</div>
+
+	</div>
+	<div id="numbers-4" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[3] }" id="numero4">4</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[18] }" id="numero19">19</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[33] }" id="numero34">34</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[48] }" id="numero49">49</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[63] }" id="numero64">64</div>
+
+	</div>
+	<div id="numbers-5" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[4] }" id="numero5">5</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[19] }" id="numero20">20</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[34] }" id="numero35">35</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[49] }" id="numero50">50</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[64] }" id="numero65">65</div>
+
+	</div>
+	<div id="numbers-6" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[5] }" id="numero6">6</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[20] }" id="numero21">21</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[35] }" id="numero36">36</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[50] }" id="numero51">51</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[65] }" id="numero66">66</div>
+
+	</div>
+	<div id="numbers-7" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[6] }" id="numero7">7</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[21] }" id="numero22">22</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[36] }" id="numero37">37</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[51] }" id="numero52">52</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[66] }" id="numero67">67</div>
+
+	</div>
+	<div id="numbers-8" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[8-1] }" id="numero8">8</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[23-1] }" id="numero23">23</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[38-1] }" id="numero38">38</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[53-1] }" id="numero53">53</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[68-1] }" id="numero68">68</div>
+
+	</div>
+	<div id="numbers-9" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[9-1] }" id="numero9">9</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[24-1] }" id="numero24">24</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[39-1] }" id="numero39">39</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[54-1] }" id="numero54">54</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[69-1] }" id="numero69">69</div>
+
+	</div>
+	<div id="numbers-10" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[10-1] }" id="numero10">10</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[25-1] }" id="numero25">25</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[40-1] }" id="numero40">40</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[55-1] }" id="numero55">55</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[70-1] }" id="numero70">70</div>
+
+	</div>
+	<div id="numbers-11" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[11-1] }" id="numero11">11</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[26-1] }" id="numero26">26</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[41-1] }" id="numero41">41</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[56-1] }" id="numero56">56</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[71-1] }" id="numero71">71</div>
+
+	</div>
+	<div id="numbers-12" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[12-1] }" id="numero12">12</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[27-1] }" id="numero27">27</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[42-1] }" id="numero42">42</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[57-1] }" id="numero57">57</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[72-1] }" id="numero72">72</div>
+
+	</div>
+	<div id="numbers-13" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[13-1] }" id="numero13">13</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[28-1] }" id="numero28">28</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[43-1] }" id="numero43">43</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[58-1] }" id="numero58">58</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[73-1] }" id="numero73">73</div>
+
+	</div>
+	<div id="numbers-14" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[14-1] }" id="numero14">14</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[29-1] }" id="numero29">29</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[44-1] }" id="numero44">44</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[59-1] }" id="numero59">59</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[74-1] }" id="numero74">74</div>
+
+	</div>
+	<div id="numbers-15" class="d-flex flex-row flex-sm-row flex-md-column flex-fill">
+		<div class="flex-fill numero columna-b" [ngClass]="{ 'seleccionado': listaBalotas[15-1] }" id="numero15">15</div>
+		<div class="flex-fill numero columna-i" [ngClass]="{ 'seleccionado': listaBalotas[30-1] }" id="numero30">30</div>
+		<div class="flex-fill numero columna-n" [ngClass]="{ 'seleccionado': listaBalotas[45-1] }" id="numero45">45</div>
+		<div class="flex-fill numero columna-g" [ngClass]="{ 'seleccionado': listaBalotas[60-1] }" id="numero60">60</div>
+		<div class="flex-fill numero columna-o" [ngClass]="{ 'seleccionado': listaBalotas[75-1] }" id="numero75">75</div>
+
+	</div>
+</div>
+
+<!--
+<div class="d-flex flex-row columna" id="columna-b">
+  <div class="flex-fill numero" id="numero1">1</div>
+  <div class="flex-fill numero" id="numero2">2</div>
+  <div class="flex-fill numero" id="numero3">3</div>
+  <div class="flex-fill numero" id="numero4">4</div>
+  <div class="flex-fill numero" id="numero5">5</div>
+  <div class="flex-fill numero" id="numero6">6</div>
+  <div class="flex-fill numero" id="numero7">7</div>
+  <div class="flex-fill numero" id="numero8">8</div>
+  <div class="flex-fill numero" id="numero9">9</div>
+  <div class="flex-fill numero" id="numero10">10</div>
+  <div class="flex-fill numero" id="numero11">11</div>
+  <div class="flex-fill numero" id="numero12">12</div>
+  <div class="flex-fill numero" id="numero13">13</div>
+  <div class="flex-fill numero" id="numero14">14</div>
+  <div class="flex-fill numero" id="numero15">15</div>
+</div>
+<div class="d-flex flex-row columna" id="columna-i">
+  <div class="flex-fill numero" id="numero16">16</div>
+  <div class="flex-fill numero" id="numero17">17</div>
+  <div class="flex-fill numero" id="numero18">18</div>
+  <div class="flex-fill numero" id="numero19">19</div>
+  <div class="flex-fill numero" id="numero20">20</div>
+  <div class="flex-fill numero" id="numero21">21</div>
+  <div class="flex-fill numero" id="numero22">22</div>
+  <div class="flex-fill numero" id="numero23">23</div>
+  <div class="flex-fill numero" id="numero24">24</div>
+  <div class="flex-fill numero" id="numero25">25</div>
+  <div class="flex-fill numero" id="numero26">26</div>
+  <div class="flex-fill numero" id="numero27">27</div>
+  <div class="flex-fill numero" id="numero28">28</div>
+  <div class="flex-fill numero" id="numero29">29</div>
+  <div class="flex-fill numero" id="numero30">30</div>
+</div>
+<div class="d-flex flex-row columna" id="columna-n">
+  <div class="flex-fill numero" id="numero31">31</div>
+  <div class="flex-fill numero" id="numero32">32</div>
+  <div class="flex-fill numero" id="numero33">33</div>
+  <div class="flex-fill numero" id="numero34">34</div>
+  <div class="flex-fill numero" id="numero35">35</div>
+  <div class="flex-fill numero" id="numero36">36</div>
+  <div class="flex-fill numero" id="numero37">37</div>
+  <div class="flex-fill numero" id="numero38">38</div>
+  <div class="flex-fill numero" id="numero39">39</div>
+  <div class="flex-fill numero" id="numero40">40</div>
+  <div class="flex-fill numero" id="numero41">41</div>
+  <div class="flex-fill numero" id="numero42">42</div>
+  <div class="flex-fill numero" id="numero43">43</div>
+  <div class="flex-fill numero" id="numero44">44</div>
+  <div class="flex-fill numero" id="numero45">45</div>
+</div>
+<div class="d-flex flex-row columna" id="columna-g">
+  <div class="flex-fill numero" id="numero46">46</div>
+  <div class="flex-fill numero" id="numero47">47</div>
+  <div class="flex-fill numero" id="numero48">48</div>
+  <div class="flex-fill numero" id="numero49">49</div>
+  <div class="flex-fill numero" id="numero50">50</div>
+  <div class="flex-fill numero" id="numero51">51</div>
+  <div class="flex-fill numero" id="numero52">52</div>
+  <div class="flex-fill numero" id="numero53">53</div>
+  <div class="flex-fill numero" id="numero54">54</div>
+  <div class="flex-fill numero" id="numero55">55</div>
+  <div class="flex-fill numero" id="numero56">56</div>
+  <div class="flex-fill numero" id="numero57">57</div>
+  <div class="flex-fill numero" id="numero58">58</div>
+  <div class="flex-fill numero" id="numero59">59</div>
+  <div class="flex-fill numero" id="numero60">60</div>
+</div>
+<div class="d-flex flex-row columna" id="columna-o">
+  <div class="flex-fill numero" id="numero61">61</div>
+  <div class="flex-fill numero" id="numero62">62</div>
+  <div class="flex-fill numero" id="numero63">63</div>
+  <div class="flex-fill numero" id="numero64">64</div>
+  <div class="flex-fill numero" id="numero65">65</div>
+  <div class="flex-fill numero" id="numero66">66</div>
+  <div class="flex-fill numero" id="numero67">67</div>
+  <div class="flex-fill numero" id="numero68">68</div>
+  <div class="flex-fill numero" id="numero69">69</div>
+  <div class="flex-fill numero" id="numero70">70</div>
+  <div class="flex-fill numero" id="numero71">71</div>
+  <div class="flex-fill numero" id="numero72">72</div>
+  <div class="flex-fill numero" id="numero73">73</div>
+  <div class="flex-fill numero" id="numero74">74</div>
+  <div class="flex-fill numero" id="numero75">75</div>
+</div>-->

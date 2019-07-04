@@ -1,0 +1,40 @@
+<div class="container">
+	<dl class="row">
+		<dt class="col-sm-3">Nombre</dt>
+		<dd class="col-sm-9">{{sorteo_src.nombre}}</dd>
+
+		<dt class="col-sm-3">horaCreacion</dt>
+		<dd class="col-sm-9">{{sorteo_src.horaCreacion }}</dd>
+
+		<dt class="col-sm-3">horaEjecucion</dt>
+		<dd class="col-sm-9">{{sorteo_src.horaEjecucion}}</dd>
+
+		<dt class="col-sm-3">cierreVenta</dt>
+		<dd class="col-sm-9">{{sorteo_src.cierreVenta}}</dd>
+
+		<dt class="col-sm-3">estadoSorteo</dt>
+		<dd class="col-sm-9">{{sorteo_src.estadoSorteo}}</dd>
+
+		<dt class="col-sm-3">valorTabla</dt>
+		<dd class="col-sm-9">{{sorteo_src.valorTabla}}</dd>
+
+		<dt class="col-sm-3">horaApertura</dt>
+		<dd class="col-sm-9">{{sorteo_src.horaApertura}}</dd>
+
+		<dt class="col-sm-3">recaudoMinimo</dt>
+		<dd class="col-sm-9">{{sorteo_src.recaudoMinimo}}</dd>
+
+	</dl>
+  <h2>Premios</h2>
+  <div *ngFor="let premio of premios">
+    <br>Valor:{{premio.valor}}
+    <br>Porcentaje: {{premio.porcentaje}}
+    <div *ngFor="let figura of premio.figuras" >
+      
+      <app-figura [cfigura]= "figura"></app-figura>
+    </div>
+  </div>
+
+
+</div>
+

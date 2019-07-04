@@ -1,0 +1,18 @@
+<div class="d-flex flex-column container-fluid min-vw-100 min-vh-100 vh-100" id="main">
+  <div id="panel-superior" class="row flex-fill">
+    <div id="balotera" class="col-md-3">
+      <app-balotera-bingo></app-balotera-bingo>
+    </div>
+    <div id="premio" class="col-md-3">
+      <app-premios [listaPremios] = 'premios'></app-premios>
+    </div>
+    <div id="info" class="col-md-6">
+      <app-info-bingo [idSorteo] ='idSorteo' ></app-info-bingo>
+    </div>
+  </div>
+  <div id="panel-inferior" class="flex-fill">
+    <app-tablero-bingo  ></app-tablero-bingo>
+  </div>
+
+
+</div>
