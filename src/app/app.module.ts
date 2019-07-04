@@ -24,10 +24,11 @@ import { BalotasServiceService } from './Servicios/balotas-service.service';
 import { PremiosComponent } from './premios/premios.component';
 import { GanadoresComponent } from './ganadores/ganadores.component';
 import { MisCartonesComponent } from './mis-cartones/mis-cartones.component';
+import { MisApuestasService } from './Servicios/mis-apuestas.service';
 @NgModule({
   imports:      [ AppRoutingModule, BrowserModule, FormsModule, NgbModule ],
   declarations: [ AppComponent, HelloComponent, TableroBingoComponent, InfoBingoComponent, BaloteraBingoComponent, OnPlayComponent, OnFinishedComponent, OnPendingComponent, OnCloseSalesComponent, FullInfoBingoComponent, FiguraComponent, ApuestaComponent, OnCanceledComponent, PremiosComponent, GanadoresComponent, MisCartonesComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [SorteoBingoService, FiguraBingoService, PremioServiceService, BalotasServiceService]
+  providers: [SorteoBingoService, FiguraBingoService, PremioServiceService, BalotasServiceService, MisApuestasService]
 })
 export class AppModule { }
