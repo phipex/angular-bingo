@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
@@ -26,7 +27,8 @@ import { GanadoresComponent } from './ganadores/ganadores.component';
 import { MisCartonesComponent } from './mis-cartones/mis-cartones.component';
 import { MisApuestasService } from './Servicios/mis-apuestas.service';
 @NgModule({
-  imports:      [ AppRoutingModule, BrowserModule, FormsModule, NgbModule ],
+  imports:      [ AppRoutingModule, BrowserModule, FormsModule, NgbModule,
+    HttpClientModule ],
   declarations: [ AppComponent, HelloComponent, TableroBingoComponent, InfoBingoComponent, BaloteraBingoComponent, OnPlayComponent, OnFinishedComponent, OnPendingComponent, OnCloseSalesComponent, FullInfoBingoComponent, FiguraComponent, ApuestaComponent, OnCanceledComponent, PremiosComponent, GanadoresComponent, MisCartonesComponent ],
   bootstrap:    [ AppComponent ],
   providers: [SorteoBingoService, FiguraBingoService, PremioServiceService, BalotasServiceService, MisApuestasService]
