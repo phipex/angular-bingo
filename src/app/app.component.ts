@@ -33,11 +33,11 @@ export class AppComponent implements OnInit {
 
       if(!this.idSala){
         console.log("no llego nada");
-        return;
+        //return;
       }
 
       this.sorteo =this.sorteoService.getSorteoById(this.idSorteo);
-      console.log(this.sorteo);
+      console.log("this.sorteo",this.sorteo);
 
       this.sorteoService.saveTemp(this.sorteo);
 
@@ -45,20 +45,20 @@ export class AppComponent implements OnInit {
       console.log(estado, (EstadoSorteo.PENDING == estado), EstadoSorteo.PENDING);
 
       if(EstadoSorteo.PENDING == estado){
-        this.router.navigate(['/onpending']);
+        this.router.navigate(['/onpending'], { skipLocationChange: true });
         return;
       }
       
       if(EstadoSorteo.STARTED == estado){
-        this.router.navigate(['/onplay', this.idSorteo]);
+        this.router.navigate(['/onplay', this.idSorteo], { skipLocationChange: true });
         return;
       }
       if(EstadoSorteo.CANCELED == estado){
-        this.router.navigate(['/oncanceled']);
+        this.router.navigate(['/oncanceled'], { skipLocationChange: true });
         return;
       }
       if(EstadoSorteo.FINISHED == estado){
-        this.router.navigate(['/onfinished']);
+        this.router.navigate(['/onfinished'], { skipLocationChange: true });
         return;
       }/**/
     });
