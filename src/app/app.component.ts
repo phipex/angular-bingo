@@ -23,9 +23,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.idSala = params.get('idSala');
-      this.idSorteo = params.get('idSorteo')
-      this.nombreOperador = params.get('nombreOperador')
+      this.idSala = params.get('idSala') || 1;
+      this.idSorteo = params.get('idSorteo') || 1;
+      this.nombreOperador = params.get('nombreOperador') || 1;
 
       console.log(this.idSala);
       console.log(this.idSorteo);

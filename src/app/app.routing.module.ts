@@ -18,7 +18,7 @@ import { AppComponent } from './app.component';
       { path: 'onclosesales', component: OnCloseSalesComponent },
       { path: 'oncanceled', component: OnCloseSalesComponent },
       { path: 'sorteos/:nombreOperador/Bingo/:idSala/:idSorteo', component: AppComponent }
-      //,{ path: '**', redirectTo: 'onpending'}
+      ,{ path: '**', component: AppComponent}
     ])
   ],
   exports: [

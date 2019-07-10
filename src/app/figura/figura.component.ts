@@ -22,8 +22,14 @@ export class FiguraComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges) {
     const propName = 'cfigura';
+    console.log(propName);
     let change = changes[propName];
+    console.log(change);
     let nuevaFigura = change.currentValue;
+    if(!nuevaFigura){
+      return;
+    }
+    console.log(nuevaFigura);
     let posiciones = nuevaFigura.posicions;
     for(let pos of posiciones){
       this.indices[pos.index] = 1;  

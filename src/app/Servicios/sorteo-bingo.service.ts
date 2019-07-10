@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import * as moment from 'moment';
+import moment from 'moment';
 import { Sorteo, ISorteo, EstadoSorteo } from '../Modelos/sorteo.model';
 @Injectable()
 export class SorteoBingoService {
@@ -25,7 +25,7 @@ export class SorteoBingoService {
     sorteo.horaEjecucion = moment("2019-01-01T01:01:01.000-500");
     sorteo.horaProgramacion = moment("2019-01-01T01:01:01.000-500");
     sorteo.cierreVenta = moment("2019-01-01T01:01:01.000-500");
-    sorteo.estadoSorteo = EstadoSorteo.FINISHED;
+    sorteo.estadoSorteo = EstadoSorteo.STARTED;
     sorteo.valorTabla = 10000;
     sorteo.horaApertura = moment("2019-01-01T01:01:01.000-500");
     sorteo.recaudoMinimo = sorteo.valorTabla * 1000;
