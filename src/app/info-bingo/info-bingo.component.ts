@@ -10,13 +10,13 @@ import { BalotaBingo, IBalotaBingo}  from '../Modelos/balota.model';
 export class InfoBingoComponent implements OnInit {
 
   @Input() idSorteo;
-  private listaBalotas: Integer[] = [];
-  ultima: Integer = 0;
-  ultima1: Integer = 0;
-  ultima2: Integer = 0;
-  ultima3: Integer = 0;
-  ultima4: Integer = 0;
-  len: Integer = 0;
+  private listaBalotas: Number[] = [];
+  ultima: Number = 0;
+  ultima1: Number = 0;
+  ultima2: Number = 0;
+  ultima3: Number = 0;
+  ultima4: Number = 0;
+  len: Number = 0;
 
   constructor(balotaService: BalotasServiceService) { 
 
