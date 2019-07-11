@@ -10,12 +10,13 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { SorteoBingoService } from '../Servicios/sorteo-bingo.service';
 import { BalotasServiceService } from '../Servicios/balotas-service.service';
 import { PremioServiceService } from '../Servicios/premio-service.service';
+import { DinamicComponent } from '../base-dinamica/dinamic-component';
 @Component({
   selector: 'app-on-play',
   templateUrl: './on-play.component.html',
   styleUrls: ['./prueba.scss']
 })
-export class OnPlayComponent implements OnInit {
+export class OnPlayComponent implements OnInit, DinamicComponent {
   idSorteo;
    
   balotas: IBalotaBingo[];

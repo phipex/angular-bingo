@@ -25,7 +25,7 @@ export class SorteoBingoService {
     sorteo.horaEjecucion = moment("2019-01-01T01:01:01.000-500");
     sorteo.horaProgramacion = moment("2019-01-01T01:01:01.000-500");
     sorteo.cierreVenta = moment("2019-01-01T01:01:01.000-500");
-    sorteo.estadoSorteo = EstadoSorteo.STARTED;
+    sorteo.estadoSorteo = EstadoSorteo.PENDING;
     sorteo.valorTabla = 10000;
     sorteo.horaApertura = moment("2019-01-01T01:01:01.000-500");
     sorteo.recaudoMinimo = sorteo.valorTabla * 1000;

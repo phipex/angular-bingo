@@ -26,10 +26,12 @@ import { PremiosComponent } from './premios/premios.component';
 import { GanadoresComponent } from './ganadores/ganadores.component';
 import { MisCartonesComponent } from './mis-cartones/mis-cartones.component';
 import { MisApuestasService } from './Servicios/mis-apuestas.service';
+import { BaseDinamicaComponent } from './base-dinamica/base-dinamica.component';
+import { DcDirective } from './base-dinamica/dc.directive';
 @NgModule({
   imports:      [ AppRoutingModule, BrowserModule, FormsModule, NgbModule,
     HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, TableroBingoComponent, InfoBingoComponent, BaloteraBingoComponent, OnPlayComponent, OnFinishedComponent, OnPendingComponent, OnCloseSalesComponent, FullInfoBingoComponent, FiguraComponent, ApuestaComponent, OnCanceledComponent, PremiosComponent, GanadoresComponent, MisCartonesComponent ],
+  declarations: [ AppComponent, HelloComponent, TableroBingoComponent, InfoBingoComponent, BaloteraBingoComponent, OnPlayComponent, OnFinishedComponent, OnPendingComponent, OnCloseSalesComponent, FullInfoBingoComponent, FiguraComponent, ApuestaComponent, OnCanceledComponent, PremiosComponent, GanadoresComponent, MisCartonesComponent, BaseDinamicaComponent, DcDirective ],
   bootstrap:    [ AppComponent ],
   providers: [SorteoBingoService, FiguraBingoService, PremioServiceService, BalotasServiceService, MisApuestasService]
 })
